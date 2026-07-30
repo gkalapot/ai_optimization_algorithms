@@ -291,7 +291,7 @@ if __name__ == "__main__":
     ensure_unzipped()
 
     if len(sys.argv) < 3:
-        print("Usage: python 421_project1_p3.py <HC/SA/GA> <matrix_file>")
+        print("Usage: python local_search_tsp_algorithms.py <NN|NN2OPT|RRNN> <matrix_file> [k] [repeats]")
         sys.exit(1)
 
     alg = sys.argv[1].upper()
