@@ -1,4 +1,5 @@
 # Traveling Salesman Problem (TSP) Optimization Algorithms
+Author: Georgia Kalapotharakou
 
 This repository contains Python implementations of several algorithms for solving or approximating the TSP. The project compares greedy methods, exact search, local search, randomized search, and evolutionary search on distance matrices.
 
@@ -20,7 +21,7 @@ This repository contains Python implementations of several algorithms for solvin
 
 ## Input Format
 
-Each algorithm expects a matrix file where each row contains space-separated numeric distances. An example of an input matrix is given in examples/example_matrix.txt.
+Each algorithm expects a matrix file where each row contains space-separated numeric distances. An example of an input matrix is given in example/example_matrix.txt.
 
 ## How to Run
 ### greedy_tsp_algorithms.py
@@ -28,7 +29,7 @@ python greedy_tsp_algorithms.py NN example/example_matrix.txt
 python greedy_tsp_algorithms.py NN2OPT example/example_matrix.txt
 python greedy_tsp_algorithms.py RRNN example/example_matrix.txt 2 100
 ### astar_tsp.py
-python astar_tsp.py ASTAR matrices/example.txt
+python astar_tsp.py ASTAR example/example_matrix.txt
 ### local_search_tsp_algorithms.py
 python local_search_tsp_algorithms.py HC example/example_matrix.txt
 python local_search_tsp_algorithms.py SA example/example_matrix.txt
