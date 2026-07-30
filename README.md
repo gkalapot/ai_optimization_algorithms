@@ -25,15 +25,15 @@ Each algorithm expects a matrix file where each row contains space-separated num
 
 ## How to Run
 ### greedy_tsp_algorithms.py
-python greedy_tsp_algorithms.py NN example/example_matrix.txt
-python greedy_tsp_algorithms.py NN2OPT example/example_matrix.txt
-python greedy_tsp_algorithms.py RRNN example/example_matrix.txt 2 100
+- python greedy_tsp_algorithms.py NN example/example_matrix.txt
+- python greedy_tsp_algorithms.py NN2OPT example/example_matrix.txt
+- python greedy_tsp_algorithms.py RRNN example/example_matrix.txt 2 100
 ### astar_tsp.py
-python astar_tsp.py ASTAR example/example_matrix.txt
+- python astar_tsp.py ASTAR example/example_matrix.txt
 ### local_search_tsp_algorithms.py
-python local_search_tsp_algorithms.py HC example/example_matrix.txt
-python local_search_tsp_algorithms.py SA example/example_matrix.txt
-python local_search_tsp_algorithms.py GA example/example_matrix.txt
+- python local_search_tsp_algorithms.py HC example/example_matrix.txt
+- python local_search_tsp_algorithms.py SA example/example_matrix.txt
+- python local_search_tsp_algorithms.py GA example/example_matrix.txt
 
 ## Output
 Each script prints timing information and the final tour cost. The A* script also prints the number of expanded nodes.
