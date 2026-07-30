@@ -181,7 +181,7 @@ if __name__ == "__main__":
 
     if len(sys.argv) < 3:
         print(
-            "Usage: python 421_project1_p1.py <NN|NN2OPT|RRNN> <matrix_file> [k] [repeats]"
+            "Usage: python greedy_tsp_algorithms.py <NN|NN2OPT|RRNN> <matrix_file> [k] [repeats]"
         )
         sys.exit(1)
 
