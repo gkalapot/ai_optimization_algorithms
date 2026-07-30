@@ -1,17 +1,18 @@
-# Traveling Salesman Problem (TSP) Optimization Algorithms
+# TSP Optimization Algorithms
 Author: Georgia Kalapotharakou
 
+## What is the TSP
+The Traveling Salesman Problem (TSP) asks for the shortest possible route that visits each city exactly once and returns to the starting city, when given the distances between each city. It is a classic combinatorial optimization problem.
 This repository contains Python implementations of several algorithms for solving or approximating the TSP. The project compares greedy methods, exact search, local search, randomized search, and evolutionary search on distance matrices.
 
-## Algorithms Included
-
-- Nearest Neighbor
-- Nearest Neighbor with 2-Opt
-- Random-Restart Nearest Neighbor
-- A* Search with a Prim/MST-based heuristic
-- Hill Climbing
-- Simulated Annealing
-- Genetic Algorithm
+## Algorithm Included + Brief Descriptions
+- **Nearest Neighbor (NN)**: greedily moves to the closest unvisited city.
+- **Nearest Neighbor with 2-Opt**: improves a NN tour using local edge swaps.
+- **Random-Restart Nearest Neighbor (RRNN)**: repeats a randomized greedy search multiple times and keeps the best result.
+- **A***: performs informed search using a heuristic based on a minimum spanning tree estimate.
+- **Hill Climbing**: repeatedly makes local improvements until no better neighboring solution is found.
+- **Simulated Annealing**: allows occasional worse moves to escape local minima.
+- **Genetic Algorithm**: evolves a population of tours using selection, crossover, and mutation.
 
 ## Files
 
@@ -27,7 +28,7 @@ Each algorithm expects a matrix file where each row contains space-separated num
 ### greedy_tsp_algorithms.py
 - python greedy_tsp_algorithms.py NN example/example_matrix.txt
 - python greedy_tsp_algorithms.py NN2OPT example/example_matrix.txt
-- python greedy_tsp_algorithms.py RRNN example/example_matrix.txt 2 100
+- python greedy_tsp_algorithms.py RRNN example/example_matrix.txt <k> <number of repeats>
 ### astar_tsp.py
 - python astar_tsp.py ASTAR example/example_matrix.txt
 ### local_search_tsp_algorithms.py
